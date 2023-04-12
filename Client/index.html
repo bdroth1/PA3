@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Music Library</title>
+</head>
+<body>
+  <h1>Music Library</h1>
+  <form id="add-song-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="author">Author:</label>
+    <input type="text" id="author" name="author" required><br>
+    <button type="submit">Add Song</button>
+  </form>
+  <table id="songs-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Date Added</th>
+        <th>Favorite</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Songs will be dynamically added here -->
+    </tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
